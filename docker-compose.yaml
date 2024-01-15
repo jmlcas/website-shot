@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+    website-shot:
+        image: flowko1/website-shot  
+        container_name: website-shot   
+        ports:
+            - '8200:3000'
+        restart: unless-stopped    
+        volumes:
+            - ./webshot:/usr/src/website-shot/screenshots
+            
