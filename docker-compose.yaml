@@ -9,8 +9,8 @@ services:
             - '8200:3000'
         restart: unless-stopped  
         environment:
-            - PASSWORD_PROTECT: 1
-            - PASSWORD: p4ssw0rd         
+            - PASSWORD_PROTECT=1
+            - PASSWORD=p4ssw0rd         
         volumes:
             - ./webshot:/usr/src/website-shot/screenshots
             
